@@ -15,6 +15,10 @@
 
 		<meta name="fragment" content="!" />
 
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 		<!--[if lt IE 9]>
 			<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -59,6 +63,7 @@
 					<div class="col-md-4 feature">
 						<i class="icon ion-ios-color-wand-outline"></i>
 						<div>
+							<i class="fa fa-codepen" aria-hidden="true"></i>
 							<h4>Espacios</h4>
 							<p>Bodegas de excelente<br />
 								calidad de 5 a 40 m2..</p>
@@ -68,6 +73,7 @@
 					<div class="col-md-4 feature">
 						<i class="icon ion-compass"></i>
 						<div>
+							<i class="fa fa-arrows-alt" aria-hidden="true"></i>
 							<h4>Arriendos <br />flexibles</h4>
 							<p>Arriendos indefinidos con la<br />
 								posibilidad de extenderlos de<br />
@@ -78,6 +84,7 @@
 					<div class="col-md-4 feature">
 						<i class="icon ion-email-unread"></i>
 						<div>
+							<i class="fa fa-map-o" aria-hidden="true"></i>
 							<h4>Ubicación</h4>
 							<p>Ubicación céntrica<br />
 								inmejorable a pasos de<br />
@@ -113,6 +120,9 @@
 
 					</div>
 					<div class="col-lg-6">
+						<h3>
+							Cotiza con nosotros:
+						</h3>
 						<div class="contact-form">
 							<form
 								data-fv-framework="bootstrap"
@@ -121,15 +131,13 @@
 								data-fv-row-invalid="has-danger"
 							>
 								<div class="form-group">
-									<label class="form-control-label" for="ContactName">A <strong>nombre</strong> de quién es el café</label>
 									<input id="ContactName" class="form-control" type="text" placeholder="Tu nombre" name="cm-name"
 										data-fv-notempty="true"
 										data-fv-notempty-message="Por favor ingresa tu nombre."
 									/>
 								</div>
 								<div class="form-group">
-									<label class="form-control-label" for="ContactEmail">Nos seguimos comunicando por <strong>email</strong></label>
-									<input id="ContactEmail" class="form-control" type="email" placeholder="Tu email" name="cm-ckhlhd-ckhlhd"
+									<input id="ContactEmail" class="form-control" type="email" placeholder="Tu correo electrónico" name="cm-ckhlhd-ckhlhd"
 										data-fv-notempty="true"
 										data-fv-notempty-message="Por favor ingresa un correo electrónico válido."
 
@@ -140,8 +148,7 @@
 									/>
 								</div>
 								<div class="form-group">
-									<label class="form-control-label" for="ContactMessage">Cuentanos más sobre tu idea, nos interesan los detalles</label>
-									<textarea id="ContactMessage" class="form-control" rows="3" placeholder="En que te ayudamos" name="cm-f-eujluk"></textarea>
+									<textarea id="ContactMessage" class="form-control" rows="3" placeholder="mensaje" name="cm-f-eujluk"></textarea>
 								</div>
 								<div class="form-actions">
 									<button class="btn-shadow btn-shadow-primary" type="submit">Enviar Mensaje</button>
