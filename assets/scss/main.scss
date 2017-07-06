@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+	// min-height: 100vh;
+	min-height: 513px;
+	position: relative;
+	background-image: url(../img/hero@2x.jpg);
+	background-color: #000;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+
+	@media(max-width: 1024px) {
+		background-attachment: inherit;
+	}
+
+	.hero-text {
+		padding-top: 100px;
+		h1 {
+			span {
+				padding: 5px 10px;
+				background-color: #f5e45b;
+				line-height: 1.5em;
+				font-size: 52px;
+				font-weight: 700;
+				letter-spacing: 0.5px;
+				color: #252525;
+			}
+		}
+		p {
+			line-height: 36px;
+			font-size: 26px;
+			font-weight: 300;
+			color: #fff;
+		}
+	}
+}
+
