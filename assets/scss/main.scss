@@ -22,9 +22,10 @@ body {
 		padding-top: 100px;
 		h1 {
 			span {
+				margin-left: -10px;
 				padding: 5px 10px;
 				background-color: #f5e45b;
-				line-height: 1.5em;
+				line-height: 1.6em;
 				font-size: 52px;
 				font-weight: 700;
 				letter-spacing: 0.5px;
@@ -32,11 +33,72 @@ body {
 			}
 		}
 		p {
+			margin-bottom: 20px;
 			line-height: 36px;
 			font-size: 26px;
 			font-weight: 300;
 			color: #fff;
 		}
+		a.btn-primary {
+			padding: 16px 35px;
+			background-color: #29909e;
+			border-color: #29909e;
+			text-transform: uppercase;
+			font-size: 25px;
+			font-weight: 300;
+			letter-spacing: 0.8px;
+			color: #fff;
+			&:focus,
+			&:hover,
+			&.focus {
+				color: #fff;
+			}
+			&:focus,
+			&.focus {
+				box-shadow:0 0 0 2px rgba(26,130,144,.5)
+			}
+		}
 	}
 }
 
+.features {
+	padding: 130px 0;
+	background-color: #d8d8d8;
+	text-align: center;
+	.feature {
+		i.fa {
+			font-size: 40px;
+		}
+		h4 {
+			position: relative;
+			margin: 40px auto;
+			width: 200px;
+			height: 42px;
+			background-color: #f5e45b;
+			span {
+				display: block;
+				position: absolute;
+				
+				width: 200px;
+				line-height: 42px;
+				font-size: 30px;
+				letter-spacing: 1.9px;
+				text-transform: uppercase;
+			}
+		}
+		p {
+			height: 102px;
+			line-height: 34px;
+			font-size: 24px;
+			font-weight: 200;
+			letter-spacing: 0.6px;
+			color: #262626;
+		}
+	}
+	.feature-flexible {
+		h4 > span {
+			margin: -20px auto;
+			height: 70px;
+		}
+	}
+}
