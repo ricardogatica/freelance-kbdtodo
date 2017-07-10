@@ -82,6 +82,7 @@ $RECYCLE.BIN/
 .config.codekit/*
 /config.codekit/
 /config.codekit/*
+assets/config.codekit/
 /assets/config.codekit/
 /assets/config.codekit/*
 /assets/scss/.sass-cache/*
