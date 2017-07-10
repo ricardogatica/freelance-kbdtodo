@@ -30,17 +30,44 @@
 		<!--[if lt IE 8]>
 			<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 		<![endif]-->
+		<!-- http://www.cssscript.com/demo/side-revealing-navigation-plain-htmlcss/ -->
 
-		<header>
-			<nav class="navbar navbar-toggleable-md navbar-inverse bg-transparent" role="navigation">
+		<header class="fixed-top">
+			<nav class="navbar navbar-toggleable-md navbar-light bg-transparent" role="navigation">
+				<button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						
+					</span>
+				</button>
 
-				<a class="navbar-brand" href="/">
+				<a class="navbar-brand mr-auto" href="/">
 					KBdTODO
 				</a>
+
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+					<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="#features">
+								Características
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">
+								Tipos de bodega
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">
+								Cotiza aquí
+							</a>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		</header>
 
-		<section class="hero">
+		<section id="top" class="hero">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1">
@@ -57,17 +84,23 @@
 								Cotiza aquí
 							</a>
 						</div>
+
+						<div class="d-flex justify-content-center">
+							<a href="#features" class="scrolldown">
+								<svg width="50" height="50" viewBox="0 0 24 24">
+									<path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
+								</svg>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="features" data-scroll>
-			<div class="container">
-
+		<section class="features d-flex" id="features" data-scroll>
+			<div class="container mt-auto mb-auto">
 				<div class="row">
 					<div class="col-md-4 feature">
-						<i class="icon ion-ios-color-wand-outline"></i>
 						<div>
 							<i class="fa fa-codepen" aria-hidden="true"></i>
 							<h4>
@@ -75,29 +108,27 @@
 									Espacios
 								</span>
 							</h4>
-							<p>Bodegas de excelente<br />
-								calidad de 5 a 40 m2..</p>
+							<p class="align-self-center">Bodegas de excelente<br />
+								calidad de 5 a 40 m2.</p>
 						</div>
 					</div>
 
 					<div class="col-md-4 feature feature-flexible">
-						<i class="icon ion-compass"></i>
 						<div>
 							<i class="fa fa-arrows-alt" aria-hidden="true"></i>
 							<h4>
 								<span>
-									Arriendos <br />
+									Arriendos<br />
 									flexibles
 								</span>
 							</h4>
-							<p>Arriendos indefinidos con la<br />
+							<p class="align-self-center">Arriendos indefinidos con la<br />
 								posibilidad de extenderlos de<br />
 								acuerdo a tu necesidad.</p>
 						</div>
 					</div>
 				
 					<div class="col-md-4 feature">
-						<i class="icon ion-email-unread"></i>
 						<div>
 							<i class="fa fa-map-o" aria-hidden="true"></i>
 							<h4>
@@ -114,33 +145,58 @@
 			</div>
 		</section>
 
-		<section class="about">
+		<section class="about" id="about">
 			<div class="container">
-				<div class="head">
-					<h3>
-						Tenemos 4 tipos de bodega* según <span>superficie</span> y 8 tipos según<br />
-						<span>volúmen</span>. Los valores van desde los $30.000 mensual.
-					</h3>
-					<hr />
-					<p>
-						<strong>Restart</strong> es una agencia digital online, formada por profesionales apasionados por el Diseño y Desarrollo de la web. 
-						Estámos enfocados en resolver las necesidades de tú negocio a través de servicios y soluciones tecnológicas.
-					</p>
+				<div class="row">
+					<div class="col-lg-12">
+						<h3>
+							Tenemos 4 tipos de bodega* según <span>superficie</span> y 8 tipos según<br />
+							<span>volúmen</span>. Los valores van desde los $30.000 mensual.
+						</h3>
+					</div>
+				</div>
+
+				<div class="row d-flex">
+					<div class="col-lg-3">
+						<img src="assets/dist/img/bodega-1.png" class="img-responsive" width="" alt="">
+					</div>
+					<div class="col-lg-3">
+						<img src="assets/dist/img/bodega-2.png" class="img-responsive" width="" alt="">
+					</div>
+					<div class="col-lg-3">
+						<img src="assets/dist/img/bodega-3.png" class="img-responsive" width="" alt="">
+					</div>
+					<div class="col-lg-3">
+						<img src="assets/dist/img/bodega-4.png" class="img-responsive" width="" alt="">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<p>
+							<a href="#contact" class="btn btn-lg btn-primary">
+								Cotiza aquí
+							</a>
+
+							<br />
+
+							* Otras configuraciones de superficie y volúmen según requerimiento.
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="contact">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						
-						<div id="map" style="width:100%;height:500px;"></div>
+		<section class="contact" id="contact">
+			<div class="map" id="map">
+				
+			</div>
 
-					</div>
-					<div class="col-lg-6">
+			<div class="form">
+				<div class="row">
+					<div class="col-lg-12">
 						<h3>
-							Cotiza con nosotros:
+							Cotiza aquí:
 						</h3>
 						<div class="contact-form">
 							<form
@@ -150,13 +206,21 @@
 								data-fv-row-invalid="has-danger"
 							>
 								<div class="form-group">
-									<input id="ContactName" class="form-control" type="text" placeholder="Tu nombre" name="cm-name"
+									<input id="ContactName" class="form-control" type="text" name="cm-name"
+										autocomplete="off"
 										data-fv-notempty="true"
 										data-fv-notempty-message="Por favor ingresa tu nombre."
 									/>
+
+									<label for="ContactName">
+										<span>
+											Tu nombre
+										</span>
+									</label>
 								</div>
 								<div class="form-group">
-									<input id="ContactEmail" class="form-control" type="email" placeholder="Tu correo electrónico" name="cm-ckhlhd-ckhlhd"
+									<input id="ContactEmail" class="form-control" type="email" name="cm-ckhlhd-ckhlhd"
+										autocomplete="off"
 										data-fv-notempty="true"
 										data-fv-notempty-message="Por favor ingresa un correo electrónico válido."
 
@@ -165,12 +229,28 @@
 
 										required
 									/>
+
+									<label for="ContactEmail">
+										<span>
+											Tu correo electrónico
+										</span>
+									</label>
 								</div>
+
+
 								<div class="form-group">
-									<textarea id="ContactMessage" class="form-control" rows="3" placeholder="mensaje" name="cm-f-eujluk"></textarea>
+									<textarea id="ContactMessage" class="form-control" name="cm-f-eujluk" autocomplete="off" rows="1"></textarea>
+
+									<label for="ContactMessage">
+										<span>
+											Mensaje
+										</span>
+									</label>
 								</div>
 								<div class="form-actions">
-									<button class="btn-shadow btn-shadow-primary" type="submit">Enviar Mensaje</button>
+									<button class="btn-shadow btn-shadow-primary" type="submit">
+										Enviar Mensaje
+									</button>
 								</div>
 							</form>
 						</div>
@@ -178,36 +258,50 @@
 					</div>
 				</div>
 			</div>
-						
 		</section>
 
 		<footer>
-			<a href="#" class="go-top">
+			<a href="#top" class="go-top">
 				<i class="fa fa-angle-up"></i>
 				TOP
 			</a>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3">
-						<h4>KBdTODO</h4>
+					<div class="col-md-2 d-flex flex-row align-middle">
+						<h4 class="mt-auto mb-auto logo">KBdTODO</h4>
 					</div>
 
-					<div class="col-md-3">
-						<h4>
+					<div class="col-md-3 d-flex flex-row align-middle">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-envelope fa-stack-1x"></i>
+						</span>
+
+						<h4 class="mt-auto mb-auto">
 							kbdtodopv@gmail.com
 						</h4>
 					</div>
 					
-					<div class="col-md-3">
-						<h4>
+					<div class="col-md-4 d-flex flex-row align-middle">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-map-marker fa-stack-1x"></i>
+						</span>
+
+						<h4 class="mt-auto mb-auto">
 							<a href="https://www.google.cl/maps/@-41.319206,-73.001408,15z" target="_blank">
 								Pasaje Kahl #13, Puerto Varas
 							</a>
 						</h4>
 					</div>
-					<div class="col-md-3">
-						<h4>
-							<a href="tel:+56997039010">+56 9 9703 9010</a>
+					<div class="col-md-3 d-flex flex-row">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-phone fa-stack-1x"></i>
+						</span>
+						
+						<h4 class="mt-auto mb-auto">
+							<a href="tel:+56997039010">+56 9 9703 9010</a><br />
 							<a href="tel:+56652231530">+56 65 223 1530</a>
 						</h4>
 					</div>
@@ -215,182 +309,19 @@
 			</div>
 		</footer>
 
-		<script>
-			function initMap() {
-				var map = new google.maps.Map(document.getElementById('map'), {
-					center: {lat: 40.674, lng: -73.945},
-					zoom: 12,
-					styles: [
-						{
-							"elementType": "geometry",
-							"stylers": [
-								{
-									"color": "#f5f5f5"
-								}
-							]
-						},
-						{
-							"elementType": "labels.icon",
-							"stylers": [
-								{
-									"visibility": "off"
-								}
-							]
-						},
-						{
-							"elementType": "labels.text.fill",
-							"stylers": [
-								{
-									"color": "#616161"
-								}
-							]
-						},
-						{
-							"elementType": "labels.text.stroke",
-							"stylers": [
-								{
-									"color": "#f5f5f5"
-								}
-							]
-						},
-						{
-							"featureType": "administrative.land_parcel",
-							"elementType": "labels.text.fill",
-							"stylers": [
-								{
-									"color": "#bdbdbd"
-								}
-							]
-						},
-						{
-							"featureType": "poi",
-							"elementType": "geometry",
-							"stylers": [
-								{
-									"color": "#eeeeee"
-								}
-							]
-						},
-						{
-							"featureType": "poi",
-							"elementType": "labels.text.fill",
-							"stylers": [
-								{
-									"color": "#757575"
-								}
-							]
-						},
-						{
-							"featureType": "poi.park",
-							"elementType": "geometry",
-							"stylers": [
-								{
-									"color": "#e5e5e5"
-								}
-							]
-						},
-						{
-							"featureType": "poi.park",
-							"elementType": "labels.text.fill",
-							"stylers": [
-								{
-									"color": "#9e9e9e"
-								}
-							]
-						},
-						{
-							"featureType": "road",
-							"elementType": "geometry",
-							"stylers": [
-								{
-									"color": "#ffffff"
-								}
-							]
-						},
-						{
-							"featureType": "road.arterial",
-							"elementType": "labels.text.fill",
-							"stylers": [
-								{
-									"color": "#757575"
-								}
-							]
-						},
-						{
-							"featureType": "road.highway",
-							"elementType": "geometry",
-							"stylers": [
-								{
-									"color": "#dadada"
-								}
-							]
-						},
-						{
-							"featureType": "road.highway",
-							"elementType": "labels.text.fill",
-							"stylers": [
-								{
-									"color": "#616161"
-								}
-							]
-						},
-						{
-							"featureType": "road.local",
-							"elementType": "labels.text.fill",
-							"stylers": [
-								{
-									"color": "#9e9e9e"
-								}
-							]
-						},
-						{
-							"featureType": "transit.line",
-							"elementType": "geometry",
-							"stylers": [
-								{
-									"color": "#e5e5e5"
-								}
-							]
-						},
-						{
-							"featureType": "transit.station",
-							"elementType": "geometry",
-							"stylers": [
-								{
-									"color": "#eeeeee"
-								}
-							]
-						},
-						{
-							"featureType": "water",
-							"elementType": "geometry",
-							"stylers": [
-								{
-									"color": "#c9c9c9"
-								}
-							]
-						},
-						{
-							"featureType": "water",
-							"elementType": "labels.text.fill",
-							"stylers": [
-								{
-									"color": "#9e9e9e"
-								}
-							]
-						}
-					]
-				});
-			}
-		</script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-O00ZdOoKIXTc_STDI9qckbpq9HosX2c&callback=initMap"
 		async defer></script>
 
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="//npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.21/autosize.min.js"></script>
+
+		<script src="assets/dist/js/classie.js"></script>
 		<script src="assets/dist/js/main.js"></script>
 
 		<script>
-			# analytics
+			// analytics
 		</script>
 	</body>
 </html>
-
