@@ -17,6 +17,8 @@ header {
     letter-spacing: 1.8px;
     text-transform: uppercase;
     color: #404040; }
+  header .navbar .navbar-nav .link-contact {
+    background-color: #f5e45b; }
 
 .hero {
   position: relative;
@@ -195,7 +197,7 @@ header {
         font-family: 'Roboto', sans-serif;
         -webkit-appearance: none;
         /* for box shadows to show on iOS */
-        width: 70%;
+        width: 100%;
         background: transparent;
         opacity: 0;
         padding: 0;

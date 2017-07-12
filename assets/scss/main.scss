@@ -24,6 +24,9 @@ header {
 				text-transform: uppercase;
 				color: #404040;
 			}
+			.link-contact {
+				background-color: #f5e45b;
+			}
 		}
 	}
 }
@@ -258,7 +261,7 @@ header {
 				font-family: 'Roboto', sans-serif;
 				-webkit-appearance: none; /* for box shadows to show on iOS */
 
-				width: 70%;
+				width: 100%;
 				background: transparent;
 				opacity: 0;
 				// padding: 0.35em;
