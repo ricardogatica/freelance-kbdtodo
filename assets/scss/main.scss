@@ -197,7 +197,7 @@ header {
 	.form {
 		right: 0;
 		position: absolute;
-		padding: 100px 10% 0 50px;
+		padding: 100px 15% 0 50px;
 		background-image: url(../img/contact.jpg);
 		background-repeat: no-repeat;
 
@@ -391,7 +391,7 @@ header {
 		button {
 			position: absolute;
 			right: 0;
-			margin: -50px 0 0 0;
+			margin: -30px -10% 0 0;
 			padding: 0;
 			background: transparent;
 			border: 0;
@@ -426,6 +426,7 @@ footer {
 	}
 	h4 {
 		margin-left: 20px;
+		line-height: 1.5;
 		font-weight: 200;
 		font-size: 1em;
 		color: #fff;
