@@ -6,10 +6,16 @@ body {
 header {
   background-color: #fff; }
   header .navbar .navbar-brand {
+    line-height: 0.7em;
     font-size: 36px;
     font-weight: bold;
     letter-spacing: 2.4px;
     color: #404040; }
+    header .navbar .navbar-brand small {
+      display: block;
+      font-size: 0.4em;
+      text-align: center;
+      text-transform: uppercase; }
   header .navbar .navbar-nav .nav-link {
     padding: .5em 1.5em;
     font-size: 16px;
