@@ -20,8 +20,8 @@ header {
 
 .hero {
   position: relative;
-  padding: 200px 0 0 0;
-  min-height: 100vh;
+  padding: 150px 0 0 0;
+  min-height: 510px;
   background-image: url(../img/hero@2x.jpg);
   background-repeat: no-repeat;
   background-color: #000;
@@ -69,7 +69,7 @@ header {
 .features {
   padding-top: 5em;
   background-color: #f7f7f7;
-  min-height: 100vh;
+  min-height: 510px;
   text-align: center; }
   .features .feature i.fa {
     font-size: 2.5em; }
@@ -99,9 +99,9 @@ header {
     height: 70px; }
 
 .about {
-  padding-top: 5em;
+  padding: 100px 0 0 0;
   background-color: #29909e;
-  min-height: 100vh;
+  min-height: 510px;
   text-align: center; }
   .about h3 {
     padding: 1em 0;
@@ -136,22 +136,22 @@ header {
 
 .contact {
   position: relative;
-  min-height: 100vh; }
+  min-height: 500px; }
   .contact .map {
     position: absolute;
     width: 50%;
-    min-height: 100vh; }
+    min-height: 500px; }
   .contact .form {
     right: 0;
     position: absolute;
-    padding: 80px 80px;
+    padding: 100px 10% 0 50px;
     background-image: url(../img/contact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     width: 50%;
-    min-height: 100vh; }
+    min-height: 500px; }
     @media (max-width: 1024px) {
       .contact .form {
         background-attachment: inherit; } }
@@ -195,7 +195,7 @@ header {
         font-family: 'Roboto', sans-serif;
         -webkit-appearance: none;
         /* for box shadows to show on iOS */
-        width: 100%;
+        width: 70%;
         background: transparent;
         opacity: 0;
         padding: 0;
@@ -279,8 +279,23 @@ header {
         color: #fff;
         -webkit-transform: translate3d(0, -2em, 0) scale3d(0.6, 0.6, 1);
         transform: translate3d(0, -2em, 0) scale3d(0.6, 0.6, 1); }
+    .contact .form button {
+      position: absolute;
+      right: 0;
+      margin: -50px 0 0 0;
+      padding: 0;
+      background: transparent;
+      border: 0; }
+      .contact .form button .fa-stack .fa-stack-2x {
+        font-size: 3em;
+        color: #f5e45b; }
+      .contact .form button .fa-stack .fa-stack-1x {
+        padding: 0.4em 0 0 0.2em;
+        font-size: 1.5em;
+        color: #000; }
 
 footer {
+  position: relative;
   padding: 50px 0;
   background-color: #262626;
   letter-spacing: 0.2px;
@@ -301,3 +316,23 @@ footer {
       color: #fff; }
       footer h4 a:hover {
         color: #f5e45b; }
+  footer a.go-top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: #fff;
+    padding-left: 2px;
+    padding-top: 8px;
+    border-radius: 50%;
+    text-align: center;
+    color: #222;
+    text-decoration: none; }
+    footer a.go-top i {
+      display: block;
+      font-size: 16px; }

@@ -29,10 +29,9 @@ header {
 }
 
 .hero {
-	// min-height: 513px;
 	position: relative;
-	padding: 200px 0 0 0;
-	min-height: 100vh;
+	padding: 150px 0 0 0;
+	min-height: 510px;
 	background-image: url(../img/hero@2x.jpg);
 	background-repeat: no-repeat;
 	background-color: #000;
@@ -96,10 +95,9 @@ header {
 }
 
 .features {
-	// padding: 150px 0;
 	padding-top: 5em;
 	background-color: #f7f7f7;
-	min-height: 100vh;
+	min-height: 510px;
 	text-align: center;
 	.feature {
 		i.fa {
@@ -140,9 +138,9 @@ header {
 }
 
 .about {
-	padding-top: 5em;
+	padding: 100px 0 0 0;
 	background-color: #29909e;
-	min-height: 100vh;
+	min-height: 510px;
 	text-align: center;
 	h3 {
 		padding: 1em 0;
@@ -187,16 +185,16 @@ header {
 
 .contact {
 	position: relative;
-	min-height: 100vh;
+	min-height: 500px;
 	.map {
 		position: absolute;
 		width: 50%;
-		min-height: 100vh;
+		min-height: 500px;
 	}
 	.form {
 		right: 0;
 		position: absolute;
-		padding: 80px 80px;
+		padding: 100px 10% 0 50px;
 		background-image: url(../img/contact.jpg);
 		background-repeat: no-repeat;
 
@@ -209,7 +207,7 @@ header {
 		}
 
 		width: 50%;
-		min-height: 100vh;
+		min-height: 500px;
 		&:before {
 			content: '';
 			position: absolute;
@@ -260,8 +258,7 @@ header {
 				font-family: 'Roboto', sans-serif;
 				-webkit-appearance: none; /* for box shadows to show on iOS */
 
-
-				width: 100%;
+				width: 70%;
 				background: transparent;
 				opacity: 0;
 				// padding: 0.35em;
@@ -387,10 +384,31 @@ header {
 				transform: translate3d(0, -2em, 0) scale3d(0.6, 0.6, 1);
 			}
 		}
+
+		button {
+			position: absolute;
+			right: 0;
+			margin: -50px 0 0 0;
+			padding: 0;
+			background: transparent;
+			border: 0;
+			.fa-stack {
+				.fa-stack-2x {
+					font-size: 3em;
+					color: #f5e45b;
+				}
+				.fa-stack-1x {
+					padding: 0.4em 0 0 0.2em;
+					font-size: 1.5em;
+					color: #000;
+				}
+			}
+		}
 	}
 }
 
 footer {
+	position: relative;
 	padding: 50px 0;
 	background-color: #262626;
 	letter-spacing: 0.2px;
@@ -417,6 +435,28 @@ footer {
 			&:hover {
 				color: #f5e45b;
 			}
+		}
+	}
+	a.go-top {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		top: -25px;
+		width: 50px;
+		height: 50px;
+		font-size: 12px;
+		letter-spacing: 1px;
+		background: #fff;
+		padding-left: 2px;
+		padding-top: 8px;
+		border-radius: 50%;
+		text-align: center;
+		color: #222;
+		text-decoration: none;
+		i {
+			display: block;
+			font-size: 16px;
 		}
 	}
 }
