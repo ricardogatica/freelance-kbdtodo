@@ -154,7 +154,6 @@ main .hero {
   min-height: 500px; }
   .contact .map {
     position: absolute;
-    width: 50%;
     min-height: 500px; }
   .contact .form {
     right: 0;
@@ -165,7 +164,6 @@ main .hero {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    width: 50%;
     min-height: 500px; }
     @media (max-width: 1024px) {
       .contact .form {

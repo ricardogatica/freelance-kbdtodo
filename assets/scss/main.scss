@@ -210,7 +210,6 @@ main {
 	min-height: 500px;
 	.map {
 		position: absolute;
-		width: 50%;
 		min-height: 500px;
 	}
 	.form {
@@ -228,7 +227,6 @@ main {
 			background-attachment: inherit;
 		}
 
-		width: 50%;
 		min-height: 500px;
 		&:before {
 			content: '';
