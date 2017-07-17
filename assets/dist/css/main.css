@@ -1,7 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 body {
+  font-size: 18px;
   font-family: 'Roboto', sans-serif;
   font-weight: 200; }
+  @media (max-width: 736px) {
+    body {
+      font-size: 11px; } }
 
 header {
   background-color: #fff; }
@@ -26,10 +30,9 @@ header {
   header .navbar .navbar-nav .link-contact {
     background-color: #f5e45b; }
 
-.hero {
+main .hero {
   position: relative;
   padding: 150px 0 0 0;
-  min-height: 510px;
   background-image: url(../img/hero@2x.jpg);
   background-repeat: no-repeat;
   background-color: #000;
@@ -37,41 +40,43 @@ header {
   background-position: center center;
   background-attachment: fixed; }
   @media (max-width: 1024px) {
-    .hero {
+    main .hero {
       background-attachment: inherit; } }
-  .hero .hero-text h1 span {
-    margin-left: -10px;
-    padding: 5px 10px;
-    background-color: #f5e45b;
+  main .hero .hero-text h1 {
     line-height: 1.6em;
     font-family: 'Roboto', sans-serif;
-    font-size: 52px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 0.01em;
     color: #252525; }
-  .hero .hero-text p {
+    main .hero .hero-text h1 span {
+      margin-left: -10px;
+      padding: 5px 10px;
+      background-color: #f5e45b; }
+  main .hero .hero-text p {
     margin-bottom: 20px;
-    line-height: 36px;
-    font-size: 26px;
+    line-height: 1.5em;
+    font-size: 1.3em;
     font-weight: 300;
+    letter-spacing: 0.05em;
     color: #fff; }
-  .hero .hero-text a.btn-primary {
-    padding: 16px 35px;
+  main .hero .hero-text a.btn-primary {
+    padding: 0.7em 1.8em;
     background-color: #29909e;
     border-color: #29909e;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    font-weight: 300;
+    font-size: 1.2em;
+    font-weight: bolder;
     letter-spacing: 0.8px;
     color: #fff; }
-    .hero .hero-text a.btn-primary:focus, .hero .hero-text a.btn-primary:hover, .hero .hero-text a.btn-primary.focus {
+    main .hero .hero-text a.btn-primary:focus, main .hero .hero-text a.btn-primary:hover, main .hero .hero-text a.btn-primary.focus {
       color: #fff; }
-    .hero .hero-text a.btn-primary:focus, .hero .hero-text a.btn-primary.focus {
+    main .hero .hero-text a.btn-primary:focus, main .hero .hero-text a.btn-primary.focus {
       box-shadow: 0 0 0 2px rgba(26, 130, 144, 0.5); }
-  .hero .scrolldown {
+  main .hero .scrolldown {
     padding: 20px 50px; }
-    .hero .scrolldown svg {
+    main .hero .scrolldown svg {
       fill: rgba(255, 255, 255, 0.7); }
 
 .features {
@@ -97,9 +102,9 @@ header {
       text-transform: uppercase; }
   .features .feature p {
     height: 102px;
-    line-height: 34px;
-    font-size: 24px;
-    font-weight: 200;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: lighter;
     letter-spacing: 0.6px;
     color: #262626; }
   .features .feature-flexible h4 > span {

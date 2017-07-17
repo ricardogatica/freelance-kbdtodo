@@ -1,8 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body {
+	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 200;
+
+	@media(max-width: 736px) {
+		font-size: 11px;
+	}
 }
 
 header {
@@ -38,71 +43,75 @@ header {
 	}
 }
 
-.hero {
-	position: relative;
-	padding: 150px 0 0 0;
-	min-height: 510px;
-	background-image: url(../img/hero@2x.jpg);
-	background-repeat: no-repeat;
-	background-color: #000;
-	background-size: cover;
-	background-position: center center;
-	background-attachment: fixed;
+main {
+	.hero {
+		position: relative;
+		padding: 150px 0 0 0;
+		background-image: url(../img/hero@2x.jpg);
+		background-repeat: no-repeat;
+		background-color: #000;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
 
-	@media(max-width: 1024px) {
-		background-attachment: inherit;
-	}
+		@media(max-width: 1024px) {
+			background-attachment: inherit;
+		}
 
-	.hero-text {
-		h1 {
-			span {
-				margin-left: -10px;
-				padding: 5px 10px;
-				background-color: #f5e45b;
+		.hero-text {
+			h1 {
 				line-height: 1.6em;
 				font-family: 'Roboto', sans-serif;
-				font-size: 52px;
-				font-weight: 700;
-				letter-spacing: 0.5px;
+				font-size: 3em;
+				font-weight: bold;
+				letter-spacing: 0.01em;
 				color: #252525;
+				span {
+					margin-left: -10px;
+					padding: 5px 10px;
+					background-color: #f5e45b;
+				}
 			}
-		}
-		p {
-			margin-bottom: 20px;
-			line-height: 36px;
-			font-size: 26px;
-			font-weight: 300;
-			color: #fff;
-		}
-		a.btn-primary {
-			padding: 16px 35px;
-			background-color: #29909e;
-			border-color: #29909e;
-			text-transform: uppercase;
-			font-family: 'Roboto', sans-serif;
-			font-size: 25px;
-			font-weight: 300;
-			letter-spacing: 0.8px;
-			color: #fff;
-			&:focus,
-			&:hover,
-			&.focus {
+			p {
+				margin-bottom: 20px;
+				line-height: 1.5em;
+				font-size: 1.3em;
+				font-weight: 300;
+				letter-spacing: 0.05em;
 				color: #fff;
 			}
-			&:focus,
-			&.focus {
-				box-shadow:0 0 0 2px rgba(26,130,144,.5)
+			a.btn-primary {
+				padding: 0.7em 1.8em;
+				background-color: #29909e;
+				border-color: #29909e;
+				text-transform: uppercase;
+				font-family: 'Roboto', sans-serif;
+				font-size: 1.2em;
+				font-weight: bolder;
+				letter-spacing: 0.8px;
+				color: #fff;
+				&:focus,
+				&:hover,
+				&.focus {
+					color: #fff;
+				}
+				&:focus,
+				&.focus {
+					box-shadow:0 0 0 2px rgba(26,130,144,.5)
+				}
 			}
 		}
-	}
 
-	.scrolldown {
-		padding: 20px 50px;
-		svg {
-			fill: rgba(255,255,255,0.7);
+		.scrolldown {
+			padding: 20px 50px;
+			svg {
+				fill: rgba(255,255,255,0.7);
+			}
 		}
 	}
 }
+
+	
 
 .features {
 	padding-top: 5em;
@@ -132,9 +141,11 @@ header {
 		}
 		p {
 			height: 102px;
-			line-height: 34px;
-			font-size: 24px;
-			font-weight: 200;
+			// line-height: 34px;
+			// font-size: 24px;
+			line-height: 25px;
+			font-size: 18px;
+			font-weight: lighter;
 			letter-spacing: 0.6px;
 			color: #262626;
 		}
