@@ -12,33 +12,31 @@ body {
 
 header {
 	background-color: #fff;
-	.navbar {
-		.navbar-brand {
-			line-height: 0.7em;
-			font-size: 36px;
-			font-weight: bold;
-			letter-spacing: 2.4px;
-			color: #404040;
-			small {
-				display: block;
-				font-size: 0.4em;
-				text-align: center;
-				text-transform: uppercase;
-			}
+	.navbar-brand {
+		line-height: 0.7em;
+		font-size: 36px;
+		font-weight: bold;
+		letter-spacing: 2.4px;
+		text-align: center;
+		color: #404040;
+		small {
+			display: block;
+			font-size: 0.4em;
+			text-transform: uppercase;
 		}
+	}
 
-		.navbar-nav {
-			.nav-link {
-				padding: .5em 1.5em;
-				font-size: 16px;
-				font-weight: bold;
-				letter-spacing: 1.8px;
-				text-transform: uppercase;
-				color: #404040;
-			}
-			.link-contact {
-				background-color: #f5e45b;
-			}
+	.navbar-nav {
+		.nav-link {
+			padding: .5em 1.5em;
+			font-size: 16px;
+			font-weight: bold;
+			letter-spacing: 1.8px;
+			text-transform: uppercase;
+			color: #404040;
+		}
+		.link-contact {
+			background-color: #f5e45b;
 		}
 	}
 }
