@@ -6,7 +6,7 @@ body {
 	font-weight: 200;
 
 	@media(max-width: 736px) {
-		font-size: 8px;
+		font-size: 14px;
 	}
 }
 
@@ -44,7 +44,7 @@ header {
 main {
 	.hero {
 		position: relative;
-		padding: 150px 0 0 0;
+		padding: 8em 0 0 0;
 		background-image: url(../img/hero@2x.jpg);
 		background-repeat: no-repeat;
 		background-color: #000;
@@ -78,25 +78,27 @@ main {
 				letter-spacing: 0.05em;
 				color: #fff;
 			}
-			a.btn-primary {
-				padding: 0.7em 1.8em;
-				background-color: #29909e;
-				border-color: #29909e;
-				text-transform: uppercase;
-				font-family: 'Roboto', sans-serif;
-				font-size: 1.2em;
-				font-weight: bolder;
-				letter-spacing: 0.8px;
+		
+		}
+
+		a.btn-primary {
+			padding: 0.7em 1.8em;
+			background-color: #29909e;
+			border-color: #29909e;
+			text-transform: uppercase;
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.2em;
+			font-weight: bolder;
+			letter-spacing: 0.8px;
+			color: #fff;
+			&:focus,
+			&:hover,
+			&.focus {
 				color: #fff;
-				&:focus,
-				&:hover,
-				&.focus {
-					color: #fff;
-				}
-				&:focus,
-				&.focus {
-					box-shadow:0 0 0 2px rgba(26,130,144,.5)
-				}
+			}
+			&:focus,
+			&.focus {
+				box-shadow:0 0 0 2px rgba(26,130,144,.5)
 			}
 		}
 
@@ -112,7 +114,8 @@ main {
 	
 
 .features {
-	padding-top: 5em;
+	padding-top: 8em;
+	padding-bottom: 3em;
 	background-color: #f7f7f7;
 	text-align: center;
 	.feature {
@@ -132,11 +135,10 @@ main {
 			span {
 				display: block;
 				position: absolute;
-				
 				width: 200px;
 				line-height: 42px;
-				font-size: 30px;
-				letter-spacing: 1.9px;
+				font-size: 1.5em;
+				letter-spacing: 0.05em;
 				text-transform: uppercase;
 			}
 		}
@@ -215,7 +217,7 @@ main {
 	.form {
 		right: 0;
 		position: absolute;
-		padding: 100px 15% 0 50px;
+		padding-top: 100px;
 		background-image: url(../img/contact.jpg);
 		background-repeat: no-repeat;
 
@@ -238,6 +240,8 @@ main {
 			background: rgba(0, 0, 0, 0.6);
 		}
 		h3 {
+			position: relative;
+			padding-left: 30px;
 			line-height: 34px;
 			font-size: 28px;
 			font-weight: 300;
@@ -252,6 +256,7 @@ main {
 			display: inline-block;
 			margin: 0;
 			padding-top: 1.5em;
+			padding-left: 30px;
 			// padding: 0;
 			// max-width: 350px;
 			// width: calc(~"100% - 2em");
@@ -407,8 +412,9 @@ main {
 
 		button {
 			position: absolute;
-			right: 0;
-			margin: -30px -10% 0 0;
+			bottom: 0;
+			// margin: -30px -10% 0 0;
+			margin: 0;
 			padding: 0;
 			background: transparent;
 			border: 0;
