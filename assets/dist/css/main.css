@@ -56,6 +56,9 @@ main .hero {
     @media (max-width: 736px) {
       main .hero .hero-text h1 {
         font-size: 2.3em; } }
+    @media (max-width: 321px) {
+      main .hero .hero-text h1 {
+        font-size: 1.8em; } }
   main .hero .hero-text p {
     margin-bottom: 20px;
     line-height: 1.5em;
@@ -96,18 +99,20 @@ main .hero {
     position: relative;
     margin: 40px auto;
     width: 200px;
+    width: 100%;
     height: 42px;
+    text-align: center;
     background-color: #f5e45b; }
     .features .feature h4 span {
       display: block;
+      right: 0;
+      left: 0;
       position: absolute;
-      width: 200px;
       line-height: 42px;
-      font-size: 1.5em;
+      font-size: 1.3em;
       letter-spacing: 0.05em;
       text-transform: uppercase; }
   .features .feature p {
-    height: 102px;
     line-height: 25px;
     font-size: 18px;
     font-weight: lighter;
