@@ -10,6 +10,10 @@ body {
 header {
   background-color: #fff; }
   header .navbar-brand {
+    display: inline-block;
+    background-image: url(../img/logo-web.png);
+    width: 140px;
+    height: 60px;
     line-height: 0.7em;
     font-size: 36px;
     font-weight: bold;
@@ -17,9 +21,11 @@ header {
     text-align: center;
     color: #404040; }
     header .navbar-brand small {
-      display: block;
+      display: none;
       font-size: 0.4em;
       text-transform: uppercase; }
+    header .navbar-brand span {
+      display: none; }
   header .navbar-nav .nav-link {
     padding: 10px 25px !important;
     font-size: 16px;
@@ -49,11 +55,11 @@ main .hero {
     font-size: 3em;
     font-weight: bold;
     letter-spacing: 0.01em;
-    color: #252525; }
+    color: #f88804; }
     main .hero .hero-text h1 span {
       margin-left: -10px;
       padding: 5px 10px;
-      background-color: #f5e45b; }
+      background-color: #ffffff; }
     @media (max-width: 736px) {
       main .hero .hero-text h1 {
         font-size: 2.3em; } }
@@ -69,8 +75,8 @@ main .hero {
     color: #fff; }
   main .hero a.btn-primary {
     padding: 0.7em 1.8em;
-    background-color: #29909e;
-    border-color: #29909e;
+    background-color: #f88804;
+    border-color: #f88804;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
@@ -85,29 +91,28 @@ main .hero {
     padding: 20px 50px; }
     main .hero .scrolldown svg {
       fill: rgba(255, 255, 255, 0.7); }
-
-.features {
+main .features {
   padding-top: 100px;
   padding-bottom: 50px;
   background-color: #f7f7f7;
   text-align: center; }
-  .features .feature i.fa {
+  main .features .feature i.fa {
     line-height: 42px;
     font-size: 2.5em; }
     @media (max-width: 768px) {
-      .features .feature i.fa {
+      main .features .feature i.fa {
         font-size: 4em; } }
     @media (max-width: 414px) {
-      .features .feature i.fa {
+      main .features .feature i.fa {
         font-size: 3em; } }
-  .features .feature h4 {
+  main .features .feature h4 {
     position: relative;
     margin: 20px auto 20px auto;
     width: 100%;
     height: 42px;
     text-align: center;
-    background-color: #f5e45b; }
-    .features .feature h4 span {
+    background-color: #f88804; }
+    main .features .feature h4 span {
       display: block;
       right: 0;
       left: 0;
@@ -116,22 +121,21 @@ main .hero {
       font-size: 1.3em;
       letter-spacing: 0.05em;
       text-transform: uppercase; }
-  .features .feature p {
+  main .features .feature p {
     line-height: 25px;
     font-size: 18px;
     font-weight: lighter;
     letter-spacing: 0.6px;
     color: #262626; }
-  .features .feature-flexible h4 > span {
+  main .features .feature-flexible h4 > span {
     margin: -20px auto;
     height: 70px; }
-
-.about {
+main .about {
   padding-top: 100px;
   padding-bottom: 50px;
-  background-color: #29909e;
+  background-color: #404040;
   text-align: center; }
-  .about h3 {
+  main .about h3 {
     padding: 1em 0;
     line-height: 1.4;
     font-family: 'Roboto', sans-serif;
@@ -139,36 +143,35 @@ main .hero {
     font-weight: lighter;
     letter-spacing: 0.7px;
     color: #ffffff; }
-    .about h3 span {
-      font-weight: 400;
-      color: #f5e45b; }
-  .about p {
+    main .about h3 span {
+      font-weight: 600;
+      color: #f88804; }
+  main .about p {
     padding: 1rem;
     letter-spacing: 0.5px;
     color: #fff; }
-  .about a.btn-primary {
+  main .about a.btn-primary {
     margin-bottom: 15px;
     padding: 16px 35px;
-    background-color: #f5e45b;
-    border-color: #f5e45b;
+    background-color: #f88804;
+    border-color: #f88804;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: 300;
     letter-spacing: 0.8px;
     color: #262626; }
-    .about a.btn-primary:focus, .about a.btn-primary:hover, .about a.btn-primary.focus {
+    main .about a.btn-primary:focus, main .about a.btn-primary:hover, main .about a.btn-primary.focus {
       color: #262626; }
-    .about a.btn-primary:focus, .about a.btn-primary.focus {
+    main .about a.btn-primary:focus, main .about a.btn-primary.focus {
       box-shadow: 0 0 0 2px rgba(26, 130, 144, 0.5); }
-
-.contact {
+main .contact {
   position: relative;
   min-height: 500px; }
-  .contact .map {
+  main .contact .map {
     position: absolute;
     min-height: 500px; }
-  .contact .form {
+  main .contact .form {
     right: 0;
     position: absolute;
     padding-top: 100px;
@@ -179,9 +182,9 @@ main .hero {
     background-attachment: fixed;
     min-height: 500px; }
     @media (max-width: 1024px) {
-      .contact .form {
+      main .contact .form {
         background-attachment: inherit; } }
-    .contact .form:before {
+    main .contact .form:before {
       content: '';
       position: absolute;
       left: 0px;
@@ -189,7 +192,7 @@ main .hero {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.6); }
-    .contact .form h3 {
+    main .contact .form h3 {
       position: relative;
       padding-left: 30px;
       line-height: 34px;
@@ -198,7 +201,7 @@ main .hero {
       text-transform: uppercase;
       letter-spacing: 1.8px;
       color: #fff; }
-    .contact .form .form-group {
+    main .contact .form .form-group {
       position: relative;
       overflow: hidden;
       z-index: 1;
@@ -211,7 +214,7 @@ main .hero {
       font-weight: 200;
       vertical-align: top;
       color: #fff; }
-      .contact .form .form-group .form-control {
+      main .contact .form .form-group .form-control {
         position: relative;
         display: block;
         float: right;
@@ -230,26 +233,26 @@ main .hero {
         padding: 0;
         z-index: 100;
         color: #fff; }
-        .contact .form .form-group .form-control:focus, .contact .form .form-group .form-control.focus {
+        main .contact .form .form-group .form-control:focus, main .contact .form .form-group .form-control.focus {
           outline: none; }
-        .contact .form .form-group .form-control::-webkit-input-placeholder {
+        main .contact .form .form-group .form-control::-webkit-input-placeholder {
           /* WebKit, Blink, Edge */
           color: #fff; }
-        .contact .form .form-group .form-control:-moz-placeholder {
+        main .contact .form .form-group .form-control:-moz-placeholder {
           /* Mozilla Firefox 4 to 18 */
           color: #fff;
           opacity: 1; }
-        .contact .form .form-group .form-control::-moz-placeholder {
+        main .contact .form .form-group .form-control::-moz-placeholder {
           /* Mozilla Firefox 19+ */
           color: #fff;
           opacity: 1; }
-        .contact .form .form-group .form-control:-ms-input-placeholder {
+        main .contact .form .form-group .form-control:-ms-input-placeholder {
           /* Internet Explorer 10-11 */
           color: #fff; }
-        .contact .form .form-group .form-control::-ms-input-placeholder {
+        main .contact .form .form-group .form-control::-ms-input-placeholder {
           /* Microsoft Edge */
           color: #fff; }
-      .contact .form .form-group label {
+      main .contact .form .form-group label {
         display: inline-block;
         position: absolute;
         bottom: 0;
@@ -271,7 +274,7 @@ main .hero {
         pointer-events: none;
         text-align: left;
         color: #fff; }
-        .contact .form .form-group label::before {
+        main .contact .form .form-group label::before {
           content: '';
           position: absolute;
           width: 100%;
@@ -284,7 +287,7 @@ main .hero {
           transition: transform 0.4s;
           -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
           transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
-        .contact .form .form-group label span {
+        main .contact .form .form-group label span {
           position: relative;
           display: block;
           -webkit-transform-origin: 0% 100%;
@@ -293,32 +296,32 @@ main .hero {
           transition: transform 0.4s, color 0.4s;
           -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
           transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
-      .contact .form .form-group .form-control:focus, .contact .form .form-group.input--filled .form-control {
+      main .contact .form .form-group .form-control:focus, main .contact .form .form-group.input--filled .form-control {
         cursor: text;
         opacity: 1;
         -webkit-transition: opacity 0s 0.4s;
         transition: opacity 0s 0.4s; }
-      .contact .form .form-group .form-control:focus + label::before, .contact .form .form-group.input--filled label::before {
+      main .contact .form .form-group .form-control:focus + label::before, main .contact .form .form-group.input--filled label::before {
         -webkit-transition-delay: 0.05s;
         transition-delay: 0.05s;
         -webkit-transform: translate3d(0, -2em, 0);
         transform: translate3d(0, -2em, 0); }
-      .contact .form .form-group .form-control:focus + label span, .contact .form .form-group.input--filled label span {
+      main .contact .form .form-group .form-control:focus + label span, main .contact .form .form-group.input--filled label span {
         font-weight: normal;
         color: #fff;
         -webkit-transform: translate3d(0, -2em, 0) scale3d(0.6, 0.6, 1);
         transform: translate3d(0, -2em, 0) scale3d(0.6, 0.6, 1); }
-    .contact .form button {
+    main .contact .form button {
       position: absolute;
       bottom: 0;
       margin: 0;
       padding: 0;
       background: transparent;
       border: 0; }
-      .contact .form button .fa-stack .fa-stack-2x {
+      main .contact .form button .fa-stack .fa-stack-2x {
         font-size: 3em;
-        color: #f5e45b; }
-      .contact .form button .fa-stack .fa-stack-1x {
+        color: #f88804; }
+      main .contact .form button .fa-stack .fa-stack-1x {
         padding: 0.4em 0 0 0.2em;
         font-size: 1.5em;
         color: #000; }
@@ -330,7 +333,7 @@ footer {
   letter-spacing: 0.2px;
   color: #fff; }
   footer .fa-stack .fa-stack-2x {
-    color: #f5e45b; }
+    color: #f88804; }
   footer .fa-stack .fa-stack-1x {
     color: #000; }
   footer h4 {
