@@ -12,6 +12,7 @@ header {
   header .navbar-brand {
     display: inline-block;
     background-image: url(../img/logo-web.png);
+    margin-right: 60px;
     width: 140px;
     height: 60px;
     line-height: 0.7em;
@@ -34,7 +35,8 @@ header {
     text-transform: uppercase;
     color: #404040; }
   header .navbar-nav .link-contact {
-    background-color: #f5e45b; }
+    font-weight: bold;
+    color: #f88804 !important; }
 
 main .hero {
   position: relative;
