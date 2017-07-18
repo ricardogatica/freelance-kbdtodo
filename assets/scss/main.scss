@@ -58,7 +58,7 @@ main {
 
 		.hero-text {
 			h1 {
-				line-height: 1.6em;
+				line-height: 1.7em;
 				font-family: 'Roboto', sans-serif;
 				font-size: 3em;
 				font-weight: bold;
@@ -75,7 +75,7 @@ main {
 				}
 
 				@media(max-width: 321px) {
-					font-size: 1.8em;
+					font-size: 1.7em;
 				}
 			}
 			p {
@@ -172,16 +172,15 @@ main {
 }
 
 .about {
-	padding: 100px 0 0 0;
+	padding: 100px 0 30px 0;
 	background-color: #29909e;
-	min-height: 510px;
 	text-align: center;
 	h3 {
 		padding: 1em 0;
-		line-height: 38px;
+		line-height: 1.4;
 		font-family: 'Roboto', sans-serif;
-		font-size: 28px;
-		font-weight: 300;
+		font-size: 1.6em;
+		font-weight: lighter;
 		letter-spacing: 0.7px;
 		color: #ffffff;
 		span {
