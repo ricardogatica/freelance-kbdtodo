@@ -85,3 +85,4 @@ $RECYCLE.BIN/
 /assets/config.codekit/*
 /assets/config.codekit
 /assets/scss/.sass-cache/*
+email.php
