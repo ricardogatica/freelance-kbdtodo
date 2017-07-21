@@ -195,6 +195,9 @@ main .contact {
     @media (max-width: 1024px) {
       main .contact .form {
         background-size: cover; } }
+    @media (min-width: 1025px) {
+      main .contact .form {
+        background-size: cover; } }
     main .contact .form:before {
       content: '';
       position: absolute;

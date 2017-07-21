@@ -264,6 +264,10 @@ main {
 				background-size: cover;
 			}
 
+			@media(min-width: 1025px) {
+				background-size: cover;
+			}
+
 			min-height: 500px;
 			&:before {
 				content: '';
