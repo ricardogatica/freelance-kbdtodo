@@ -103,7 +103,7 @@ main .hero {
     main .hero .scrolldown svg {
       fill: rgba(255, 255, 255, 0.7); }
 main .features {
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 50px;
   background-color: #f7f7f7;
   text-align: center; }

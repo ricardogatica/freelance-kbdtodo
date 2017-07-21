@@ -3,22 +3,12 @@
 
 $response = [];
 
-$response['status'] = 'success';
-$response['code'] = __LINE__;
-
-
 if (!empty($_SERVER['HTTP_REFERER']) && isset($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'], $_SERVER['HTTP_HOST']) !== false) {
 
 	if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])) {
 		require_once('vendor/PHPMailer/class.phpmailer.php');
 		require_once('vendor/PHPMailer/class.smtp.php');
 		require_once('email.php');
-
-		$config_charset = "UTF-8";
-		$config_smtp_secure = "ssl";
-		$config_host = "bh-70.webhostbox.net";
-		$config_port = 465;
-		$config_smtp_auth = true;
 
 		$mail = new PHPMailer();
 
@@ -29,8 +19,8 @@ if (!empty($_SERVER['HTTP_REFERER']) && isset($_SERVER['HTTP_REFERER']) && strpo
 		$mail->Port = $config_port;
 		$mail->SMTPAuth = $config_smtp_auth;
 
-		$mail->Username = $username;
-		$mail->Password = $password;
+		$mail->Username = $confirg_smtp_username;
+		$mail->Password = $confirg_smtp_password;
 
 		$mail->setFrom($mail->Username, 'KBdTODO.cl');
 		$mail->AddReplyTo($_POST['email']);

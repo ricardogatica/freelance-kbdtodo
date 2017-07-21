@@ -51,10 +51,10 @@
 				type: 'POST',
 				dataType: 'json',
 				beforeSend: function(){
+					form.parent().find('.alert').addClass('hide');
 					form.parent().find('.sending').fadeIn(function(){
 						form.find('[type=submit]').prop('disabled', true);
 					});
-					
 				},
 				complete: function() {
 					form.parent().find('.sending').fadeOut(function(){
@@ -64,11 +64,13 @@
 				},
 				success: function(request){
 					if (request.response.status == 'success') {
-						form.parent().find('.hide').fadeIn();
+						form.parent().find('.alert-success').fadeIn(function(){
+							this.removeClass('hide')
+						});
 					}
 				},
 				error: function(){
-
+					
 				}
 			});
 		});
