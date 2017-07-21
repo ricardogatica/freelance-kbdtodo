@@ -14,7 +14,6 @@ header {
 	background-color: #fff;
 	.navbar-brand {
 		display: inline-block;
-		background-image: url(../img/logo-web.png);
 		margin-right: 60px;
 		width: 140px;
 		height: 60px;
@@ -43,6 +42,9 @@ header {
 			letter-spacing: 1.8px;
 			text-transform: uppercase;
 			color: #404040;
+			&:focus {
+				text-decoration: underline;
+			}
 		}
 		.link-contact {
 			// background-color: #f88804;
@@ -227,6 +229,7 @@ main {
 			font-weight: 300;
 			letter-spacing: 0.8px;
 			color: #262626;
+			color: #ffffff;
 			&:focus,
 			&:hover,
 			&.focus {
@@ -253,12 +256,12 @@ main {
 			background-image: url(../img/contact.jpg);
 			background-repeat: no-repeat;
 
-			background-size: cover;
-			background-position: center center;
-			background-attachment: fixed;
+			// background-size: cover;
+			background-position: right center;
+			background-attachment: inherit;
 
 			@media(max-width: 1024px) {
-				background-attachment: inherit;
+				background-size: cover;
 			}
 
 			min-height: 500px;
@@ -271,11 +274,41 @@ main {
 				height: 100%;
 				background: rgba(0, 0, 0, 0.6);
 			}
+			.hide {
+				display: none;
+			}
+			.alert {
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				margin-top: 10px;
+				margin-right: 30px;
+				margin-left: 30px;
+				padding: 10px;
+				p {
+					margin: 0;
+				}
+			}
+			.sending {
+				z-index: 3;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				color: #fff;
+				background-color: rgba(0,0,0,0.8);
+				line-height: 500px;
+				text-align: center;
+				font-size: 2em;
+
+			}
 			h3 {
 				position: relative;
 				padding-left: 30px;
 				line-height: 34px;
-				font-size: 28px;
+				font-size: 1.4em;
 				font-weight: 300;
 				text-transform: uppercase;
 				letter-spacing: 1.8px;
@@ -310,7 +343,7 @@ main {
 					border-radius: 0;
 					background: inherit;
 					line-height: 2em;
-					font-size: 1em;
+					font-size: 0.8em;
 					font-weight: lighter;
 					font-family: 'Roboto', sans-serif;
 					-webkit-appearance: none; /* for box shadows to show on iOS */
@@ -365,7 +398,7 @@ main {
 
 					line-height: 2em;
 
-					font-size: 1em;
+					font-size: 0.9em;
 					font-weight: lighter;
 					-webkit-font-smoothing: antialiased;
 					-moz-osx-font-smoothing: grayscale;
@@ -458,7 +491,7 @@ main {
 					.fa-stack-1x {
 						padding: 0.4em 0 0 0.2em;
 						font-size: 1.5em;
-						color: #000;
+						color: #ffffff;
 					}
 				}
 			}
@@ -477,7 +510,7 @@ footer {
 			color: #f88804;
 		}
 		.fa-stack-1x {
-			color: #000;
+			color: #ffffff;
 		}
 	}
 	h4 {
@@ -493,11 +526,12 @@ footer {
 		a {
 			color: #fff;
 			&:hover {
-				color: #f5e45b;
+				color: #f88804;
 			}
 		}
 	}
 	a.go-top {
+		z-index: 10;
 		position: absolute;
 		left: 0;
 		right: 0;

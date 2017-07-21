@@ -41,6 +41,7 @@
 			<nav class="container">
 				<div class="d-flex justify-content-between hidden-lg-up">
 					<a class="navbar-brand mt-auto mb-auto" href="/">
+						<img src="assets/dist/img/logo-kbdtodo.png" alt="" class="img-fluid" />
 						<small>Bodegas</small>
 						<span>KBdTODO</span>
 					</a>
@@ -54,6 +55,7 @@
 
 				<div class="collapse navbar-collapse mt-xl-auto mb-xl-auto" id="navbarTogglerDemo01">
 					<a class="navbar-brand mt-auto mb-auto hidden-md-down" href="/">
+						<img src="assets/dist/img/logo-kbdtodo.png" alt="" class="img-fluid" />
 						<small>Bodegas</small>
 						<span>KBdTODO</span>
 					</a>
@@ -111,7 +113,7 @@
 
 							<div class="d-flex d-row justify-content-center">
 								<a href="#features" class="scrolldown ml-md-auto mr-md-auto">
-									<svg width="50" height="50" viewBox="0 0 24 24">
+									<svg width="32" height="32" viewBox="0 0 24 24">
 										<path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
 									</svg>
 								</a>
@@ -259,6 +261,14 @@
 						</div>
 						<div class="col-sm-12 col-md-8 col-lg-6 form">
 
+							<div class="hide sending">Enviando mensaje...</div>
+
+							<div class="hide alert alert-success">
+								<p>Gracias por contactarte con nosotros<br />
+									<small>Pronto le responderemos el mensaje.</small>
+								</p>
+							</div>
+
 							<form
 								data-fv-framework="bootstrap"
 								data-fv-err-clazz="form-control-feedback"
@@ -266,8 +276,8 @@
 								data-fv-row-invalid="has-danger"
 							>
 
-								<h3 class="hidden-ms-">
-									Cotiza aquí:
+								<h3>
+									Cotiza con nosotros:
 								</h3>
 
 								<div class="row">
@@ -310,6 +320,8 @@
 										<div class="form-group">
 											<input id="ContactMessage" class="form-control" type="text" name="message"
 												autocomplete="off"
+
+												required 
 											/>
 
 											<!-- <textarea id="ContactMessage" class="form-control" name="cm-f-eujluk" autocomplete="off" rows="1" required></textarea> -->
@@ -415,7 +427,7 @@
 			</div>
 		</footer>
 
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-O00ZdOoKIXTc_STDI9qckbpq9HosX2c&callback=initMap"
+		<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyD-O00ZdOoKIXTc_STDI9qckbpq9HosX2c&callback=initMap"
 		async defer></script>
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -423,9 +435,7 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.21/autosize.min.js"></script>
 
-		<script src="//cdn.jsdelivr.net/jquery.formvalidation/0.6.1/js/formValidation.min.js"></script>
-		<script src="//cdn.jsdelivr.net/jquery.formvalidation/0.6.1/js/framework/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.formvalidation/0.6.1/css/formValidation.min.css">
+		
 
 		<script src="assets/dist/js/classie.js"></script>
 		<script src="assets/dist/js/main.js"></script>

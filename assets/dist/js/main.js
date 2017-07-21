@@ -37,32 +37,41 @@
 			}
 		});
 
-			$('.contact form').on('submit', function(){
-				this.preventDefault();
-			});
+		$('.contact form').on('submit', function(e){
+			e.preventDefault();
 
-		// $('.contact form').formValidation({
-		// 	framework: 'bootstrap'
-		// }).on('success.form.fv', function(e){
-		// 	e.preventDefault();
+			var form = $(e.target);
 
-		// 	var form = $(e.target);
+			var url = 'contact.php';
+			var data = form.serialize();
 
-		// 	var url = 'contact.php';
-		// 	var data = form.serialize();
-
-		// 	$.ajax({
-		// 		url: url,
-		// 		data: data,
-		// 		type: 'POST',
-		// 		success: function(request){
+			$.ajax({
+				url: url,
+				data: data,
+				type: 'POST',
+				dataType: 'json',
+				beforeSend: function(){
+					form.parent().find('.sending').fadeIn(function(){
+						form.find('[type=submit]').prop('disabled', true);
+					});
 					
-		// 		},
-		// 		error: function(){
+				},
+				complete: function() {
+					form.parent().find('.sending').fadeOut(function(){
+						form.find('[type=submit]').prop('disabled', false);
+					});
+					
+				},
+				success: function(request){
+					if (request.response.status == 'success') {
+						form.parent().find('.hide').fadeIn();
+					}
+				},
+				error: function(){
 
-		// 		}
-		// 	});
-		// });
+				}
+			});
+		});
 
 		autosize($('textarea'));
 	});

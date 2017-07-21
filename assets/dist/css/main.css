@@ -11,7 +11,6 @@ header {
   background-color: #fff; }
   header .navbar-brand {
     display: inline-block;
-    background-image: url(../img/logo-web.png);
     margin-right: 60px;
     width: 140px;
     height: 60px;
@@ -34,6 +33,8 @@ header {
     letter-spacing: 1.8px;
     text-transform: uppercase;
     color: #404040; }
+    header .navbar-nav .nav-link:focus {
+      text-decoration: underline; }
   header .navbar-nav .link-contact {
     font-weight: bold;
     color: #f88804 !important; }
@@ -170,7 +171,8 @@ main .about {
     font-size: 25px;
     font-weight: 300;
     letter-spacing: 0.8px;
-    color: #262626; }
+    color: #262626;
+    color: #ffffff; }
     main .about a.btn-primary:focus, main .about a.btn-primary:hover, main .about a.btn-primary.focus {
       color: #262626; }
     main .about a.btn-primary:focus, main .about a.btn-primary.focus {
@@ -187,13 +189,12 @@ main .contact {
     padding-top: 100px;
     background-image: url(../img/contact.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    background-position: right center;
+    background-attachment: inherit;
     min-height: 500px; }
     @media (max-width: 1024px) {
       main .contact .form {
-        background-attachment: inherit; } }
+        background-size: cover; } }
     main .contact .form:before {
       content: '';
       position: absolute;
@@ -202,11 +203,36 @@ main .contact {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.6); }
+    main .contact .form .hide {
+      display: none; }
+    main .contact .form .alert {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin-top: 10px;
+      margin-right: 30px;
+      margin-left: 30px;
+      padding: 10px; }
+      main .contact .form .alert p {
+        margin: 0; }
+    main .contact .form .sending {
+      z-index: 3;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.8);
+      line-height: 500px;
+      text-align: center;
+      font-size: 2em; }
     main .contact .form h3 {
       position: relative;
       padding-left: 30px;
       line-height: 34px;
-      font-size: 28px;
+      font-size: 1.4em;
       font-weight: 300;
       text-transform: uppercase;
       letter-spacing: 1.8px;
@@ -232,7 +258,7 @@ main .contact {
         border-radius: 0;
         background: inherit;
         line-height: 2em;
-        font-size: 1em;
+        font-size: 0.8em;
         font-weight: lighter;
         font-family: 'Roboto', sans-serif;
         -webkit-appearance: none;
@@ -271,7 +297,7 @@ main .contact {
         padding: 0;
         width: 100%;
         line-height: 2em;
-        font-size: 1em;
+        font-size: 0.9em;
         font-weight: lighter;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -334,7 +360,7 @@ main .contact {
       main .contact .form button .fa-stack .fa-stack-1x {
         padding: 0.4em 0 0 0.2em;
         font-size: 1.5em;
-        color: #000; }
+        color: #ffffff; }
 
 footer {
   position: relative;
@@ -345,7 +371,7 @@ footer {
   footer .fa-stack .fa-stack-2x {
     color: #f88804; }
   footer .fa-stack .fa-stack-1x {
-    color: #000; }
+    color: #ffffff; }
   footer h4 {
     margin-left: 20px;
     line-height: 1.5;
@@ -358,8 +384,9 @@ footer {
     footer h4 a {
       color: #fff; }
       footer h4 a:hover {
-        color: #f5e45b; }
+        color: #f88804; }
   footer a.go-top {
+    z-index: 10;
     position: absolute;
     left: 0;
     right: 0;
