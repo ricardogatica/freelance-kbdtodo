@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 
 $response = [];
@@ -15,16 +17,19 @@ if (!empty($_SERVER['HTTP_REFERER']) && isset($_SERVER['HTTP_REFERER']) && strpo
 		$mail->IsSmtp();
 		$mail->CharSet = $config_charset;
 		$mail->SMTPSecure = $config_smtp_secure;
+		$mail->Mailer = $config_mailer;
 		$mail->Host = $config_host;
 		$mail->Port = $config_port;
 		$mail->SMTPAuth = $config_smtp_auth;
 
-		$mail->Username = $confirg_smtp_username;
-		$mail->Password = $confirg_smtp_password;
+		$mail->Username = $config_smtp_username;
+		$mail->Password = $config_smtp_password;
 
 		$mail->setFrom($mail->Username, 'KBdTODO.cl');
 		$mail->AddReplyTo($_POST['email']);
-		$mail->AddAddress('kbdtodopv@gmail.com');
+		$mail->AddAddress('contacto@kbdtodo.cl');
+		// $mail->AddAddress('kbdtodopv@gmail.com');
+
 
 		$mail->IsHTML(true);
 		$mail->Subject = "Contacto desde KBdTODO.cl";

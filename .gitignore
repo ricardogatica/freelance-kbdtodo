@@ -87,3 +87,5 @@ $RECYCLE.BIN/
 /assets/scss/.sass-cache/*
 email.php
 kbdtodo.pem
+
+/vendor/
